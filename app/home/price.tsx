@@ -348,8 +348,8 @@ function PriceCta() {
       className="mx-auto mt-6 flex justify-center sm:mt-7"
     >
       <Link
-        href="/package"
-        aria-label="ดูรายละเอียดแพ็กเกจ SCAN SUNG POS"
+        href="https://pos.scansung.app/login"
+        aria-label="เข้าสู่ระบบ SCAN SUNG POS"
         className="inline-flex w-full max-w-[210px] items-center justify-center rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-medium text-white shadow-[0_12px_28px_rgba(0,0,0,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2 sm:w-auto sm:min-w-[190px]"
       >
         ทดลองใช้เลย

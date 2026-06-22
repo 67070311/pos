@@ -125,7 +125,7 @@ export default function PackageHead() {
           className="mx-auto mt-8 flex max-w-5xl justify-center sm:mt-10 lg:mt-12"
         >
           <Link
-            href="/login"
+            href="https://pos.scansung.app/login"
             aria-label="เริ่มทดลองใช้ SCAN SUNG POS ฟรี"
             className="inline-flex w-full max-w-[320px] items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white shadow-[0_12px_35px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-[#7437f2] focus:ring-offset-2 sm:w-auto sm:min-w-[280px]"
           >
