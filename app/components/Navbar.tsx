@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MobileNavbar from "./MobileNavbar";
 
-type NavItem = {
+export type NavItem = {
   label: string;
   href: string;
 };
@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
   },
 ];
 
-const loginUrl = "https://pos.scansung.app/login";
+const policyUrl = "/policy";
 
 export default function Navbar() {
   return (
@@ -31,7 +31,7 @@ export default function Navbar() {
         <Link
           href="/"
           aria-label="กลับหน้าหลัก"
-          className="flex items-center gap-3"
+          className="flex shrink-0 items-center gap-3"
         >
           <Image
             src="/logo/logo.png"
@@ -47,7 +47,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-12 md:flex">
+        <div className="hidden items-center gap-10 md:flex lg:gap-12">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -59,14 +59,14 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href={loginUrl}
-          className="hidden rounded-full border border-[#d9c8ff] px-6 py-2.5 text-base font-semibold text-[#7437f2] transition hover:border-[#7437f2] hover:bg-purple-50 md:inline-flex"
+        <Link
+          href={policyUrl}
+          className="hidden rounded-full border border-[#d9c8ff] px-6 py-2.5 text-base font-normal text-[#7437f2] transition hover:border-[#7437f2] hover:bg-purple-50 md:inline-flex"
         >
           เข้าสู่ระบบ
-        </a>
+        </Link>
 
-        <MobileNavbar />
+        <MobileNavbar navItems={navItems} loginHref={policyUrl} />
       </nav>
     </header>
   );
