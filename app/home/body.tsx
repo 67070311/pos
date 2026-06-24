@@ -13,7 +13,7 @@ type Feature = {
   icon: React.ReactNode;
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://your-domain.com";
+const siteUrl = "https://scansung.app";
 
 const viewport = {
   once: true,

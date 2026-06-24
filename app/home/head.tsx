@@ -14,7 +14,7 @@ type CursorItem = {
   className: string;
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pos.scansung.app";
+const siteUrl = "https://scansung.app";
 
 const floatingTexts: FloatingTextItem[] = [
   {

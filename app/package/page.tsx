@@ -1,52 +1,40 @@
 import type { Metadata } from "next";
 import PackageHead from "./head";
-
-const siteUrl = "https://your-domain.com/package";
+import { OPEN_GRAPH_IMAGE, SITE_NAME } from "../seo";
 
 export const metadata: Metadata = {
-  title: "แพ็กเกจระบบ POS ร้านอาหาร | SCAN SUNG POS",
+  title: "POS ราคาถูก ราคา 199 บาท สำหรับร้านอาหาร",
   description:
-    "แพ็กเกจ SCAN SUNG POS ราคา 199 บาทต่อเดือน ระบบ POS ร้านอาหารพร้อม QR Order จัดการร้าน เมนู ออเดอร์ ยอดขาย และพนักงาน ทดลองใช้ฟรี 30 วัน",
+    "แพ็กเกจ SCAN SUNG POS ระบบ POS ราคาถูกสำหรับร้านอาหาร ราคา 199 บาทต่อเดือน พร้อม QR Order ใช้ผ่านเว็บ ไม่ต้องซื้อเครื่อง POS ทดลองใช้ฟรี 30 วัน",
   keywords: [
-    "ระบบ POS ร้านอาหาร",
-    "POS ร้านอาหาร",
-    "ระบบสั่งอาหารผ่าน QR Code",
-    "ระบบจัดการร้านอาหาร",
-    "ระบบรับออเดอร์",
-    "QR Order",
-    "SCAN SUNG POS",
+    "POS ราคาถูก",
+    "POS ราคา 199 บาท",
     "ราคา POS ร้านอาหาร",
+    "โปรแกรม POS ราคาถูก",
+    "POS ไม่ใช้เครื่อง",
+    "ระบบ POS ร้านอาหาร",
+    "QR Order",
+    "ScanSung",
   ],
   alternates: {
-    canonical: siteUrl,
+    canonical: "/package",
   },
   openGraph: {
-    title: "แพ็กเกจระบบ POS ร้านอาหาร | SCAN SUNG POS",
+    title: "POS ร้านอาหาร ราคา 199 บาท | SCAN SUNG POS",
     description:
       "ราคาเดียว 199 บาทต่อเดือน ใช้งานระบบ POS ร้านอาหารผ่านเว็บ พร้อม QR Order ทดลองใช้ฟรี 30 วัน",
-    url: siteUrl,
-    siteName: "SCAN SUNG POS",
+    url: "/package",
+    siteName: SITE_NAME,
     type: "website",
     locale: "th_TH",
-    images: [
-      {
-        url: "https://your-domain.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "แพ็กเกจระบบ POS ร้านอาหาร SCAN SUNG POS",
-      },
-    ],
+    images: [OPEN_GRAPH_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "แพ็กเกจระบบ POS ร้านอาหาร | SCAN SUNG POS",
+    title: "POS ร้านอาหาร ราคา 199 บาท | SCAN SUNG POS",
     description:
-      "ระบบ POS ร้านอาหารผ่านเว็บ พร้อม QR Order ราคา 199 บาทต่อเดือน ทดลองใช้ฟรี 30 วัน",
-    images: ["https://your-domain.com/og-image.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
+      "POS ราคาถูกสำหรับร้านอาหาร ใช้ผ่านเว็บ ไม่ต้องซื้อเครื่อง POS",
+    images: [OPEN_GRAPH_IMAGE.url],
   },
 };
 

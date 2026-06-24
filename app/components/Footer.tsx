@@ -106,11 +106,6 @@ export default function Footer() {
                 );
               })}
             </div>
-
-            <p className="mt-3 text-xs text-gray-400">
-              LINE ยังไม่ได้ใส่ลิงก์จริง สามารถเปลี่ยน href จาก &quot;#&quot;
-              เป็นลิงก์ LINE OA ได้ทันที
-            </p>
           </div>
         </div>
 

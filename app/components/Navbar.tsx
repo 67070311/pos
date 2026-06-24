@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
   },
 ];
 
-const policyUrl = "/policy";
+const policyUrl = "https://pos.scansung.app";
 
 export default function Navbar() {
   return (

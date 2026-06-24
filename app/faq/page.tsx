@@ -1,52 +1,39 @@
 import type { Metadata } from "next";
 import FaqHead from "./head";
-
-const siteUrl = "https://your-domain.com/faq";
+import { OPEN_GRAPH_IMAGE, SITE_NAME } from "../seo";
 
 export const metadata: Metadata = {
-  title: "FAQ ระบบ POS บนเบราว์เซอร์ | SCAN SUNG POS",
+  title: "คำถามเกี่ยวกับ POS ไม่ใช้เครื่องและ QR Order",
   description:
-    "คำถามที่พบบ่อยเกี่ยวกับระบบ POS บนเบราว์เซอร์ ใช้งานผ่านเว็บ ไม่ต้องโหลดแอป ไม่ต้องซื้อเครื่อง POS เฉพาะ รองรับมือถือ แท็บเล็ต และคอมพิวเตอร์",
+    "คำถามเกี่ยวกับ SCAN SUNG POS ระบบ POS ร้านอาหารผ่านเว็บ ไม่ใช้เครื่อง POS ไม่ต้องโหลดแอป พร้อมระบบสั่งอาหารผ่าน QR Code บนมือถือและแท็บเล็ต",
   keywords: [
-    "FAQ POS",
-    "ระบบ POS บนเบราว์เซอร์",
-    "POS ไม่ต้องโหลดแอป",
+    "POS ไม่ใช้เครื่อง",
     "POS ไม่ต้องซื้อเครื่อง",
-    "ระบบขายหน้าร้านผ่านเว็บ",
+    "POS ผ่านเว็บ",
+    "QR Order คืออะไร",
+    "ระบบสั่งอาหารผ่าน QR Code",
     "ระบบ POS ร้านอาหาร",
-    "ระบบจัดการร้าน",
-    "SCAN SUNG POS",
+    "ScanSung",
   ],
   alternates: {
-    canonical: siteUrl,
+    canonical: "/faq",
   },
   openGraph: {
     title: "FAQ ระบบ POS บนเบราว์เซอร์ | SCAN SUNG POS",
     description:
       "รวมคำถามเกี่ยวกับระบบ POS ที่ใช้งานผ่านเว็บเบราว์เซอร์ ไม่ต้องดาวน์โหลดแอป และไม่ต้องซื้อเครื่อง POS เพิ่ม",
-    url: siteUrl,
-    siteName: "SCAN SUNG POS",
+    url: "/faq",
+    siteName: SITE_NAME,
     type: "website",
     locale: "th_TH",
-    images: [
-      {
-        url: "https://your-domain.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "FAQ ระบบ POS บนเบราว์เซอร์ SCAN SUNG POS",
-      },
-    ],
+    images: [OPEN_GRAPH_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FAQ ระบบ POS บนเบราว์เซอร์ | SCAN SUNG POS",
+    title: "คำถามเกี่ยวกับ POS ไม่ใช้เครื่องและ QR Order",
     description:
-      "ระบบ POS ผ่านเว็บ ไม่ต้องโหลดแอป ไม่ต้องซื้อเครื่อง POS เฉพาะ ใช้งานได้บนมือถือ แท็บเล็ต และคอมพิวเตอร์",
-    images: ["https://your-domain.com/og-image.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
+      "POS ร้านอาหารผ่านเว็บ ไม่ต้องซื้อเครื่อง พร้อมระบบสั่งอาหารผ่าน QR Code",
+    images: [OPEN_GRAPH_IMAGE.url],
   },
 };
 

@@ -12,7 +12,7 @@ type FeatureItem = {
   reverse?: boolean;
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://pos.scansung.app";
+const siteUrl = "https://scansung.app";
 
 const viewport = {
   once: true,

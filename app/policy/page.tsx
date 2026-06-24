@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowDown, ChevronLeft } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-const loginUrl = "https://pos.scansung.app/login";
+const loginUrl = "https://pos.scansung.app/register";
 
 const termsSections = [
   {
@@ -151,9 +151,9 @@ const termsSections = [
   {
     title: "19. ช่องทางการติดต่อ",
     items: [
-      "LINE Official Account: [ใส่ LINE OA]",
-      "อีเมล: [ใส่อีเมล]",
-      "เบอร์โทรศัพท์: [ใส่เบอร์โทร ถ้ามี]",
+      // "LINE Official Account: [ใส่ LINE OA]",
+      "อีเมล: buildifyx.th@gmail.com",
+      "เบอร์โทรศัพท์: 064-580-9429 (คุณท็อป), 081-613-3337 (คุณมณี)",
     ],
   },
 ];
@@ -221,7 +221,7 @@ export default function PolicyPage() {
     name: "เงื่อนไขและข้อกำหนดการใช้งาน ScanSung POS",
     description:
       "เงื่อนไขและข้อกำหนดการใช้งานระบบ ScanSung POS สำหรับร้านอาหาร ระบบสั่งอาหารผ่าน QR Code จัดการเมนู ออเดอร์ พนักงาน และยอดขาย",
-    url: "https://pos.scansung.app/policy",
+    url: "https://scansung.app/policy",
     inLanguage: "th-TH",
   };
 
